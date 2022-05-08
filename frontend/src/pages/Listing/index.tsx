@@ -31,10 +31,16 @@ function Listing() {
       });
   }, [pageNumber]);
 
+
+  const handlePageChange = (newPageNumber : number) => {
+    setPageNumber(newPageNumber)
+  }
+
+
   return (
     <>
     <img className='imgLogo' src="/bunner.png" alt=""/>
-      <Pagination />
+      <Pagination page={page} onChange={handlePageChange} />
       
       <div className="container">
         <div className="row">
