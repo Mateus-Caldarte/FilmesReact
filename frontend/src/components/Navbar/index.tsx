@@ -1,13 +1,16 @@
 import {ReactComponent as GithubIcon } from 'assets/img/gitHub.svg'
 import './styles.css';
 
-function Navbar(){
 
+function Navbar(){
+        
      return (
+         <>
         <header>
         <nav className="container">
             <div className="dsmovie-nav-content">
                 <h1>Compass Movie React API</h1>
+                
                 <a href="https://github.com/Mateus-Caldarte/FilmesReact" target="_blank" rel="noreferrer">
                     <div className="dsmovie-contact-container">
                         <GithubIcon />
@@ -16,7 +19,10 @@ function Navbar(){
                 </a>
             </div>
         </nav>
-    </header>);
+    </header>
+    
+    </>
+    );
 } 
 
 export default Navbar;
